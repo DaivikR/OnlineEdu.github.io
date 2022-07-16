@@ -1,14 +1,13 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 .template {
 	float: left;
 	height: auto;
 	width: auto;
-    display: grid;
-    place-items: center center;
+    display:flex;
+    border-radius: 10px;
+	flex-direction:row;
+	gap: 10px;
+	padding: 20px;
     font-family: 'Poppins',sans-serif;
 }
 body {
@@ -99,8 +98,11 @@ nav .icon-burger .line {
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
 }
-@media screen and (max-width: 768px) {
-	
+@media screen and (max-width: 600px) {
+  
+	.template{
+		flex-direction: column;
+	}
 	
 	nav .logo {
 		float: none;
@@ -145,11 +147,10 @@ nav .icon-burger .line {
 	
 }
 .cards{
-    margin-left: 2%;	
-	display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-    padding: 2%;
-    grid-gap: 40px;
+   width: auto;
+   height:auto;
+   border-radius: 10px;
+   display: flex;
 	
 }
 .card{
